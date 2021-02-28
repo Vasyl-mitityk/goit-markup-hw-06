@@ -822,6 +822,14 @@
 
             background-color:var(--background-footer-color);
     }
+
+        .footer .contenier {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+        
+        
+    }
         .footer-logo {
             font-family: var(--title-font);
             font-weight: 700;
@@ -878,16 +886,11 @@
     }
 
 
-       .footer .contenier {
-           display: flex;
-           align-items: baseline;
-           
-           
-    }
+       
 
        .contenier-social {
            width: 206px;
-           margin-left: 70px;
+           
 
            
     }
@@ -922,10 +925,9 @@
        .footer-form {
            position: relative;
            display: flex;
-           align-items: baseline;
            flex-direction: column;
            width: 570px;
-           margin-left: 93px;
+           
     }
 
        .footer-form-title {
@@ -1020,12 +1022,13 @@
            height: 100%;
            width: 100%;
            background-color: rgba(0, 0, 0, 0.2);
+           transition: 2500ms var(--transition-timing-function);
            
            
                   
     }
 
-         .modal {
+     .modal {
             position: absolute;
             top:50%;
             left: 50%;
@@ -1040,7 +1043,7 @@
             
     }
 
-        .backdrop .modal {
+      .backdrop > .modal   {
             animation: backInUp 2500ms  cubic-bezier(0.4, 0, 0.2, 1); 
             
             
@@ -1118,12 +1121,13 @@
         line-height: 1.167;
         letter-spacing: 0.01em;
 
-        margin-bottom: 4px;
+        margin-bottom: 10px;
     }
 
        .modal-form-wrapper {
            display: block;
            position: relative;
+           margin-top: 4px;
     }
 
 
